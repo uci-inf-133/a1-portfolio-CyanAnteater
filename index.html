@@ -1,24 +1,45 @@
+<!-- this page will act as the "home" page-->
+<!------------all html files must have this first line below, AND all "actual" html code must be within the HTML tag-->
 <!doctype html>
 <html lang="en">
 
 <!--
-WRITTEN BY: Rina Taing //testing again
+WRITTEN BY: Rina Taing
 EMAIL: rinat1@uci.edu
 -->
 
+<!------------the HEAD tag contains metadata for the webpage such as a website desc (meta desc)-->
 <head>
   <meta charset="utf-8">
   <meta name="author" content="Rina Taing">
-  <meta name="description" content="description of your page">
+  <meta name="description" content="Is a website that displays sample portfolio works">
    <!-- you would link to an external stylesheet here! -->
+    <link href="./style-index.css" rel="stylesheet">
    <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
+    <link href="">
+  <!----------the TAB TITLE is edited via the TITLE tag-->
+   <title>Home</title>
 </head>
+
+  <!----------- all things visible on the page MUST be contained within the BODY tag -->
 <body>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p>
+  <div id = "topBar">
+    <a href = "./index.html">Home</a>
+    <a href = "./portfolio.html">Portfolio</a>
+    <a href = "./contact.html">Contact</a>
+  </div>
+
+  <h1>Welcome</h1>
+
+  <div id ="intro">
+    <div class="grid text-center">
+      <div class="g-col-6">.g-col-6</div>
+      <div class="g-col-6">.g-col-6</div>
+    </div>
+    <h4 class="big">About Me</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+  </div>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact</title>
+        <!--bootstrap-->
+        <link href="">
+    </head>
+    <body>
+        <div id="topBar">
+            <a href = "./index.html">Home</a>
+            <a href = "./portfolio.html">Portfolio</a>
+            <a href = "./contact.html">Contact</a>
+        </div>
+
+        <!---------contact form that uses default browser validation checks-->
+        <h1>Contact Me</h1>
+        <form class="needs-validation">
+            <!--email input-->
+            <div class="mb-4">
+                <label for="userEmailInputBox" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="userEmailInputBox" placeholder="address@example.com" required>
+            </div>
+            <br>
+            <!--message input-->
+            <div class="mb-4">
+                <label for="userTextArea" class="form-label">Message</label>
+                <textarea class="form-control" id="userTextArea" placeholder="Enter message here." required></textarea>
+            </div>
+            <br>
+            <!--submit button-->
+            <div class="mb-4">
+                <button type="submit" autofclass="btn btn-outline-secondary">Submit</button>
+            </div>
+        </form>
+
+    </body>
+</html>
