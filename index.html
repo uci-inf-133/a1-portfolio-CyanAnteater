@@ -12,7 +12,7 @@ EMAIL: rinat1@uci.edu
 <head>
   <meta charset="utf-8">
   <meta name="author" content="Rina Taing">
-  <meta name="description" content="Is a website that displays sample portfolio works">
+  <meta name="description" content="Sample website functioning as a portfolio">
    <!-- you would link to an external stylesheet here! -->
     <link href="./style-index.css" rel="stylesheet">
    <!-- you would also link to Bootstrap here! -->
@@ -20,22 +20,84 @@ EMAIL: rinat1@uci.edu
   <!----------the TAB TITLE is edited via the TITLE tag-->
    <title>Home</title>
 </head>
-
   <!----------- all things visible on the page MUST be contained within the BODY tag -->
 <body>
-  <div id = "topBar">
-    <a href = "./index.html">Home</a>
-    <a href = "./portfolio.html">Portfolio</a>
-    <a href = "./contact.html">Contact</a>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a id = "brand" class="navbar-brand">A1 Project</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href = "./index.html">Home</a>
+          <a class="nav-link" aria-current="page" href = "./portfolio.html">Portfolio</a>
+          <a class="nav-link" aria-current="page" href = "./contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+</nav>
+
+<!------------ fluid div for the rest of the page content -->
+<div id="top-box" class="container-fluid">
+  <h1 class="blocky mb-3">Meet the Author</h1>
+  <div class="card shadow mb-4">
+    <div class="row align-items-center">
+      <!-- pfp photo -->
+      <div class="col-md-6 px-4 text-center">
+        <img
+          src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg"
+          alt="default profile photo of a person"
+          class="profile-img"
+        >
+      </div>
+      <!-- bio table -->
+      <div class="col-md-6 px-4">
+        <table class="bio-table">
+          <tr>
+            <th id="bio-header" colspan="3">Small Bio</th>
+          </tr>
+          <tr>
+            <td>
+              <span class="cell-title">School</span>
+              <ul class="cell-text">
+                <li>UCI</li>
+              </ul>
+            </td>
+            <td>
+              <span class="cell-title">Major(s)</span>
+              <ul class="cell-text">
+                <li>Software Engineering</li>
+                <li>Business Information Management</li>
+              </ul>
+            </td>
+            <td>
+              <span class="cell-title">Graduation</span>
+              <ul class="cell-text">
+                <li>2028</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
   </div>
 
-  <h1>Welcome</h1>
 
-  <div id ="intro">
-    <h4 class="big">About Me</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-  </div>
-  
+  <!-----bottom About section-->
+  <section id="about">
+    <div class="card shadow mb-4">
+      <h1 class="blocky mb-3">About</h1>
+      <p id="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas facilisis ex quis enim condimentum, vulputate elementum lacus viverra. Donec non dui id augue pellentesque aliquam et eget felis. Aliquam erat volutpat. Nulla nulla augue, vehicula id volutpat nec, auctor et ipsum. Phasellus pretium non libero eu ultricies. Proin et est vitae metus interdum ullamcorper vel sit amet augue. Integer et diam eu massa faucibus molestie non vitae metus. Donec cursus lectus eros, in vestibulum sapien porta et. Aliquam ac est lorem. Etiam pulvinar laoreet augue, et faucibus ligula ornare quis. Pellentesque sed leo tincidunt, consectetur dui in, tincidunt nunc.</p>
+    </div>
+  </section>
+
+</div>
+<footer>Website author: ?????
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
