@@ -1,37 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Contact</title>
-        <!--bootstrap-->
-        <link href="">
-    </head>
-    <body>
-        <div id="topBar">
-            <a href = "./index.html">Home</a>
-            <a href = "./portfolio.html">Portfolio</a>
-            <a href = "./contact.html">Contact</a>
+<!doctype html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Rina Taing">
+    <meta name="description" content="Contact page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- you would link to an external stylesheet here! -->
+    <link href="./style-index.css" rel="stylesheet">
+   <!-- you would also link to Bootstrap here! -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!----------the TAB TITLE is edited via the TITLE tag-->
+   <title>Contact</title>
+</head>
+  <!----------- all things visible on the page MUST be contained within the BODY tag -->
+<body class="bg-gradient-custom d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+        <a id = "brand" class="navbar-brand">A1 Project</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href = "./index.html">Home</a>
+            <a class="nav-link" aria-current="page" href = "./portfolio.html">Portfolio</a>
+            <a class="nav-link active" aria-current="page" href = "./contact.html">Contact</a>
+            </div>
         </div>
+        </div>
+    </nav>
+    <!---------contact form that uses default browser validation checks-->
+    <!---------needed to use <main> to be able to create the sticky footer so the page is responsive to tall screens-->
+    <main class="flex-grow-1 d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-11 col-md-8 col-lg-6">
+                    <div class="card shadow-lg rounded-4">
+                        <div class="card-body">
+                            <h1 id="form-header" class="card-title mb-4">Contact Me</h1>
+                            <img id="mail-icon" src="./mail.png" alt="Google's mail icon">
+                            
+                            <form class="needs-validation">
+                                <div class="mb-3">
+                                    <label for="email-input" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email-input" placeholder="address@example.com" required>
+                                </div>
 
-        <!---------contact form that uses default browser validation checks-->
-        <h1>Contact Me</h1>
-        <form class="needs-validation">
-            <!--email input-->
-            <div class="mb-4">
-                <label for="userEmailInputBox" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="userEmailInputBox" placeholder="address@example.com" required>
-            </div>
-            <br>
-            <!--message input-->
-            <div class="mb-4">
-                <label for="userTextArea" class="form-label">Message</label>
-                <textarea class="form-control" id="userTextArea" placeholder="Enter message here." required></textarea>
-            </div>
-            <br>
-            <!--submit button-->
-            <div class="mb-4">
-                <button aria-label = "submit" type="submit" autofclass="btn btn-outline-secondary">Submit</button>
-            </div>
-        </form>
+                                <div class="mb-3">
+                                    <label for="message-input" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message-input" rows="4" placeholder="Enter your message here." required></textarea>
+                                </div>
 
-    </body>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-outline-secondary">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>Website author: ?????</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
 </html>

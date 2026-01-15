@@ -4,19 +4,30 @@
 
 /* ---------------for the navbar header and footer banner */
   .navbar, footer{
-    background-color:rgb(110, 114, 136);
+    background-color:rgb(156, 159, 179);
+    color:rgb(246, 251, 253);
+    font-weight: 650;
   }
   #brand{
-    color:rgb(219, 232, 240);
+    color:rgb(246, 251, 253);
+    font-weight: 775;
   }
+    .navbar .nav-link:hover,
+    .navbar .nav-link:focus {
+        color: #f1dde9;
+    }
+    .navbar .navbar-nav .nav-link.active {
+        color: #f1dde9;
+        font-weight: 650;
+    }
 
-/* ---------------for topmost card */
+/* ---------------for the top card in index.html*/
   #top-box{
     padding:2%;
     size:80%;
   }
 
-/* -----------------for the table */
+/* -----------------for the overall bio table */
   .bio-table {
     width: 95%;
     border-collapse: collapse;
@@ -34,7 +45,7 @@
     vertical-align: top;
   }
 
-  /* remove the last col outline in the table */
+  /* remove the last col outline in the info table */
   .bio-table td:last-child {
     border-right: none;
   }
@@ -54,12 +65,13 @@
   /* ----------for the pfp image that preserves the aspect ratio for responsiveness */
     .profile-img {
       max-width: 100%;
-      max-height: 100%;
+      max-height: 50%;
       object-fit: cover;
       padding:5%;
+      
     }
 
-/* --------for the About box */
+/* --------for the About box on index.html */
 #about{
   padding:1%;
 }
@@ -68,9 +80,12 @@ h1{
   padding-top: 2%;
 }
 #about-text{
+  max-width: 600px;
+  text-align: center;
   padding:1%;
   margin-left: 2%;
   margin-right: 2%;
+  margin:0 auto;
 }
 
 /*---------for the footer*/
@@ -79,3 +94,26 @@ footer{
   text-align: right;
 
 }
+
+/*----------------------------------------------------------*/
+.bg-gradient-custom {
+    background: linear-gradient(120deg, #e3f2fd, #f9e8ff);
+}
+#mail-icon {
+    display: block;
+    margin: 0 auto;
+}
+.input-related{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border:#555;
+  border-width: 1px;
+
+}
+
+#submit-button{
+  align-items: center;
+}
+
