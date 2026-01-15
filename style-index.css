@@ -79,7 +79,7 @@ h1{
   text-align:center;
   padding-top: 2%;
 }
-#about-text{
+.about-text{
   max-width: 600px;
   text-align: center;
   padding:1%;
