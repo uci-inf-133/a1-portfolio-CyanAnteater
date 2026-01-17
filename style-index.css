@@ -2,8 +2,12 @@
   border: 1px solid red;
 } */
 
-.bg-gradient-custom {
+.bg-gradient-custom{
     background: linear-gradient(120deg, #e3f2fd, #f9e8ff);
+}
+/*custom font importation with back ups*/
+*{
+  font-family: 'Bitter', Georgia, 'Times New Roman', serif;
 }
 /* ---------------for the navbar header and footer banner */
   .navbar, footer{
@@ -16,10 +20,10 @@
     font-weight: 775;
   }
   .navbar .nav-link:hover,
-  .navbar .nav-link:focus {
+  .navbar .nav-link:focus{
       color:rgb(246, 251, 253);
   }
-  .navbar .navbar-nav .nav-link.active {
+  .navbar .navbar-nav .nav-link.active{
       color:rgb(246, 251, 253);
       font-weight: 650;
   }
@@ -29,10 +33,16 @@
   }
 
   /* ---------------------------------------------------- */
-/* ---------------for the top card in index.html*/
-  #top-box{
+/* ---------------for the top card*/
+  #box{
     padding:2%;
     size:80%;
+  }
+  .profile-img{
+    border-radius: 20%;
+  }
+  #info-card{
+    border: 2px dashed rgb(145, 149, 173);
   }
 
 /* -----------------for the overall bio table */
@@ -47,38 +57,38 @@
     border-bottom: 2px solid #ccc;
   }
 
-  .bio-table td {
+  .bio-table td{
     padding: 12px;
     border-right: 1px dotted #aaa;
     vertical-align: top;
   }
 
   /* remove the last col outline in the info table */
-  .bio-table td:last-child {
+  .bio-table td:last-child{
     border-right: none;
   }
 
-  .cell-title {
+  .cell-title{
     display: block;
     font-weight: bold;
     font-size: 0.9rem;
     color: #555;
   }
 
-  .cell-text {
+  .cell-text{
     margin-top: 4px;
     font-size: 1rem;
   }
 
   /* ----------for the pfp image that preserves the aspect ratio for responsiveness */
-    .profile-img {
+    .profile-img{
       max-width: 75%;
       max-height: 75%;
       object-fit: cover;
       padding:5%;
     }
 
-/* --------for the About box on index.html */
+/* --------for the About box*/
 #about{
   padding:1%;
 }
@@ -99,9 +109,28 @@ footer{
   text-align: right;
 
 }
-
 /*----------------------------------------------------------*/
-#mail-icon {
+.card-image{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+   background-color:rgb(115, 119, 141);
+}
+/*for specifying the actual image file*/
+.card-image img{
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+/*----------------------------------------------------------*/
+#mail-icon{
     display: block;
     margin: 0 auto;
 }

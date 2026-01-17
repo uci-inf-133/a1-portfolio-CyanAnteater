@@ -11,15 +11,20 @@
     <link href="./style-index.css" rel="stylesheet">
    <!-- you would also link to Bootstrap here! -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <!----------the TAB TITLE is edited via the TITLE tag-->
+   <!--Google's font import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+   <!----------the TAB TITLE is edited via the TITLE tag-->
    <title>Portfolio</title>
 </head>
   <!----------- all things visible on the page MUST be contained within the BODY tag -->
 <body class="bg-gradient-custom d-flex flex-column min-vh-100">
 
   <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a id = "brand" class="navbar-brand">A1 Project</a>
+    <div class="container-fluid">
+      <a id = "brand" class="navbar-brand"><img id="tiny-logo" src="code-symbol.png" alt="Google Icons' HTML logo clipart" style="width: 30px; height: 30px;"> A1 Project</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -40,28 +45,58 @@
     <div class="row">
       <!-- proj1 -->
         <div class="col-md-4">
-          <div class="card">
+          <div class="card h-100">
+             <div id="bot" class="card-image">
+              <img src="./caretech.png" alt="robot mascot for CareTech" />
+            </div>
             <div class="card-body">
-              <h5 class="card-title">Card title 1</h5>
-              <p class="card-text">Proj info here.</p>
+              <h5 class="card-title">AI Agent Prototype Builder</h5>
+              <h6><em>Dandilyonn SEEDS - 2025</em></h6>
+              <div class="card-text">
+                <ul>
+                  <li>Worked in a team of 3 to help build an AI agent prototype that leveraged OpenAI API, LangChain, and Pinecone to support retrieval augmented generation when responding to user queries.</li>
+                  <li>Conducted 11 user interviews to identify common user needs/painpoints in their day-to-day life, and used Design Thinking to construct an empathy map and user personas from interview data.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       <!-- proj2-->
         <div class="col-md-4">
-          <div class="card">
+          <div class="card h-100">
+             <div id="src-folder" class="card-image">
+              <img src="./src-folder.png" alt="a screenshot of the src code file names for this project" />
+            </div>
             <div class="card-body">
-              <h5 class="card-title">Card title 2</h5>
-              <p class="card-text">Proj info here.</p>
+              <h5 class="card-title">Cuckoo Hash Table</h5>
+              <h6><em>ICS 46 - 2025</em></h6>
+              <div class="card-text">
+                <ul>
+                  <li>Coded in C++ using templates and recursion to implement a cuckoo hash table data structure that can store a variety of variable types.</li>
+                  <li>Lewis Caroll's Word Ladder game was implemented from scratch using this cuckoo hash table as the primary data structure.</li>
+                  <li>Tested the functionality of the cuckoo hash table with GTest.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       <!-- proj3 -->
         <div class="col-md-4">
-          <div class="card">
+          <div class="card h-100">
+             <div id="code-symbol" class="card-image">
+              <img src="./code-symbol.png" alt="screenshot of the folder name containing this portfolio's code files" />
+            </div>
             <div class="card-body">
-              <h5 class="card-title">Card title 3</h5>
-              <p class="card-text">Proj info here.</p>
+              <h5 class="card-title">Personal Website</h5>
+              <h6><em>INF 133 - 2026</em></h6>
+              <div class="card-text">
+                <ul>
+                  <li>Coded in HTML and CSS to design this portfolio website being viewed currently.</li>
+                  <li>Used Chrome's Web Developer tools to test the website responsiveness.
+                  <li>Used Bootstrap to aid with visual layouts and for enabling a responsive design.</li>
+                  <li>Made mockups/sketches in Figma and Procreate (an iPad drawing app) for the visual layout of the website.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
