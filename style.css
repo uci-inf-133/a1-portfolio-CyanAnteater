@@ -9,6 +9,7 @@
 *{
   font-family: 'Bitter', Georgia, 'Times New Roman', serif;
 }
+
 /* ---------------for the navbar header and footer banner */
   .navbar, footer{
     background-color:rgb(145, 149, 173);
@@ -32,11 +33,10 @@
     color:rgb(252, 230, 253);
   }
 
-  /* ---------------------------------------------------- */
+/*---------------------------------------------------------- .index specific*/
 /* ---------------for the top card*/
   #box{
     padding:2%;
-    size:80%;
   }
   .profile-img{
     border-radius: 20%;
@@ -89,10 +89,10 @@
     }
 
 /* --------for the About box*/
-#about{
+.about{
   padding:1%;
 }
-h1{
+h1, h4{
   text-align:center;
   padding-top: 2%;
 }
@@ -102,20 +102,37 @@ h1{
   padding:1%;
   margin:0 auto;
 }
+/*---------for the resume section*/
+.resume{
+  margin-bottom: 4%;
+}
+#resume-link{
+  color:rgb(62, 174, 218);
+}
 
 /*---------for the footer*/
 footer{
   padding: 2%;
   text-align: right;
-
 }
-/*----------------------------------------------------------*/
+
+
+/*---------------------------------------------------------- .portfolio specific*/
+#all-cards{
+  margin-bottom:10%;
+  margin-top:5%;
+  margin-left:5%;
+  margin-right:5%;
+}
+#recent-proj{
+  margin-bottom: 5%;
+}
 .card-image{
   display:flex;
   justify-content: center;
   align-items: center;
   height: 200px;
-   background-color:rgb(115, 119, 141);
+  background-color:rgb(115, 119, 141);
 }
 /*for specifying the actual image file*/
 .card-image img{
@@ -129,7 +146,11 @@ footer{
   flex-direction: column;
   height: 100%;
 }
-/*----------------------------------------------------------*/
+#rubric-link{
+  color:rgb(115, 119, 141);
+  font-size: small;
+}
+/*---------------------------------------------------------- .contact specific*/
 #mail-icon{
     display: block;
     margin: 0 auto;
