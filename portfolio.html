@@ -1,6 +1,6 @@
 <!--this page will display all portfolio works-->
 <!doctype html>
-<html lang = "en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Rina Taing">
@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <!-- you would link to an external stylesheet here! -->
-    <link href="./style-index.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
    <!-- you would also link to Bootstrap here! -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
    <!--Google's font import-->
@@ -16,38 +16,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   
-   <!----------the TAB TITLE is edited via the TITLE tag-->
+   <!--the TAB TITLE is edited via the TITLE tag-->
    <title>Portfolio</title>
 </head>
-  <!----------- all things visible on the page MUST be contained within the BODY tag -->
-<body class="bg-gradient-custom d-flex flex-column min-vh-100">
-
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a id = "brand" class="navbar-brand"><img id="tiny-logo" src="code-symbol.png" alt="Google Icons' HTML logo clipart" style="width: 30px; height: 30px;"> A1 Project</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <!--all things visible on the page MUST be contained within the BODY tag -->
+  <body class="bg-gradient-custom d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a id="brand" class="navbar-brand" href="/">
+          <img id="tiny-logo" src="code-symbol.png" alt="Google Icons' HTML logo clipart"
+            style="width: 30px; height: 30px;">
+          A1 Project
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link" aria-current="page" href = "./index.html">Home</a>
-          <a class="nav-link active" aria-current="page" href = "./portfolio.html">Portfolio</a>
-          <a class="nav-link" aria-current="page" href = "./contact.html">Contact</a>
+          <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+          <a class="nav-link active" aria-current="page" href="./portfolio.html">Portfolio</a>
+          <a class="nav-link" aria-current="page" href="./contact.html">Contact</a>
         </div>
       </div>
-    </div>
-</nav>
+      </div>
+  </nav>
 
-<!------------ fluid div for the rest of the page content -->
-<main class="flex-grow-1 d-flex align-items-center">
-  <!------put all 3 cards in a row-->
-  <div class="container-fluid">
-    <div class="row">
-      <!-- proj1 -->
+  <!-- fluid div for the rest of the page content -->
+  <main class="flex-grow-1 d-flex align-items-center">
+    <!--put all 3 cards in a row-->
+    <div id="all-cards" class="container-fluid">
+      <h4 id="recent-proj" style="font-size: 2.5rem;">Recent Projects</h4>
+      <div class="row">
+
+        <!-- proj1 -->
         <div class="col-md-4">
           <div class="card h-100">
-             <div id="bot" class="card-image">
-              <img src="./caretech.png" alt="robot mascot for CareTech" />
+            <div id="bot" class="card-image">
+              <img src="./caretech.png" alt="robot mascot for CareTech">
             </div>
             <div class="card-body">
               <h5 class="card-title">AI Agent Prototype Builder</h5>
@@ -61,15 +67,16 @@
             </div>
           </div>
         </div>
-      <!-- proj2-->
+
+        <!-- proj2 -->
         <div class="col-md-4">
           <div class="card h-100">
-             <div id="src-folder" class="card-image">
-              <img src="./src-folder.png" alt="a screenshot of the src code file names for this project" />
+            <div id="src-folder" class="card-image">
+              <img src="./src-folder.png" alt="a screenshot of the src code file names for this project">
             </div>
             <div class="card-body">
               <h5 class="card-title">Cuckoo Hash Table</h5>
-              <h6><em>ICS 46 - 2025</em></h6>
+              <h6><em>ICS 46- 2025</em></h6>
               <div class="card-text">
                 <ul>
                   <li>Coded in C++ using templates and recursion to implement a cuckoo hash table data structure that can store a variety of variable types.</li>
@@ -80,34 +87,37 @@
             </div>
           </div>
         </div>
-      <!-- proj3 -->
+
+        <!-- proj3 -->
         <div class="col-md-4">
           <div class="card h-100">
-             <div id="code-symbol" class="card-image">
-              <img src="./code-symbol.png" alt="screenshot of the folder name containing this portfolio's code files" />
+            <div id="code-symbol" class="card-image">
+              <img src="./code-symbol.png" alt="screenshot of the folder name containing this portfolio's code files">
             </div>
             <div class="card-body">
-              <h5 class="card-title">Personal Website</h5>
+              <h5 class="card-title">This Personal Website <a id="rubric-link" target="_blank" href="http://inf133-wi26.depstein.net/assignments/a1">(rubric here)</a></h5>
               <h6><em>INF 133 - 2026</em></h6>
               <div class="card-text">
                 <ul>
                   <li>Coded in HTML and CSS to design this portfolio website being viewed currently.</li>
-                  <li>Used Chrome's Web Developer tools to test the website responsiveness.
+                  <li>Used Chrome's Web Developer tools to test the website responsiveness.</li>
                   <li>Used Bootstrap to aid with visual layouts and for enabling a responsive design.</li>
-                  <li>Made mockups/sketches in Figma and Procreate (an iPad drawing app) for the visual layout of the website.</li>
+                  <li>Made mockups/sketches in Procreate (an iPad drawing app) for the visual layout of the website.</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
+
+      </div>
     </div>
-  </div>
+  </main>
 
-</main>
-<footer>© Website author: ?????
+  <footer>
+    <span>Copyright © 2026 by Rina Taing.</span>
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

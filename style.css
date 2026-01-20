@@ -46,7 +46,13 @@
   }
 
 /* -----------------for the overall bio table */
-  .bio-table{
+#bio-header{
+  font-size: 1.2rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: rgb(77, 80, 100);
+}  
+.bio-table{
     width: 95%;
     border-collapse: collapse;
   }
@@ -168,4 +174,3 @@ footer{
 #submit-button{
   align-items: center;
 }
-
