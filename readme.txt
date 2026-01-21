@@ -1,4 +1,4 @@
---Readme document for *Rina Taing*, *rinat1@uci.edu*--
+--Readme document for Rina Taing, rinat1@uci.edu--
 
 A reminder on academic integrity, as described in the syllabus.
 
@@ -96,7 +96,7 @@ When I coded the website up in VSCode (I wanted to work in an IDE and have acces
 
 
 6. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
-I did not discuss anything with my classmates or people outside of this class for the assignment. I did however, attend 2 of the office hours so I met with TAs and asked them for their opinion on my website layout and design. 
+I did not discuss anything with my classmates or people outside of this class for the assignment. I did however, attend 3 of the office hours so I met with TAs and asked them for their opinion on my website layout and design. 
 In those office hour sessions, we also discussed how I could better incorporate using Bootstrap and grid layouts, as my early draft of the website didn't utilize it as much as I am currently. I was also struggling to get the responsiveness to work, so we talked about strategies on how I could add more page-responsiveness. 
 
 
